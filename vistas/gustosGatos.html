@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Gustos del Usuario</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/gustosGatos.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4" style="color: #58315A;">CUENTANOS TUS GUSTOS</h2>
+        <form>
+            <!-- Pregunta 1 -->
+            <div class="form-group">
+                <label for="tamanoGato" style="color: #58315A;">¿Te gustan los gatos grandes o pequeños?</label>
+                <select class="form-control" id="tamanoGato" name="tamanoGato">
+                    <option value="grande">Grande</option>
+                    <option value="pequeno">Pequeño</option>
+                </select>
+            </div>
+
+            <!-- Pregunta 2 -->
+            <div class="form-group">
+                <label for="preferenciaColor" style="color: #58315A;">¿Tienes alguna preferencia de color o patrón de pelaje de gatos preferido?</label>
+                <input type="text" class="form-control" id="preferenciaColor" name="preferenciaColor" placeholder="Especifica tu preferencia">
+            </div>
+
+            <!-- Pregunta 3 -->
+            <div class="form-group">
+                <label for="temperamento" style="color: #58315A;">¿Te gustan gatos tranquilos o juguetones?</label>
+                <select class="form-control" id="temperamento" name="temperamento">
+                    <option value="tranquilo">Tranquilo</option>
+                    <option value="jugueton">Juguetón</option>
+                </select>
+            </div>
+
+            <!-- Pregunta 4 -->
+            <div class="form-group">
+                <label for="caracter" style="color: #58315A;">¿Te gustan los gatos independientes y libres o cariñosos y apegados?</label>
+                <select class="form-control" id="caracter" name="caracter">
+                    <option value="independiente">Independiente y libre</option>
+                    <option value="cariñoso">Cariñoso y apegado</option>
+                </select>
+            </div>
+
+            <!-- Pregunta 5 -->
+            <div class="form-group">
+                <label for="maullido" style="color: #58315A;">¿Te gusta que los gatos maullen mucho?</label>
+                <select class="form-control" id="maullido" name="maullido">
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <!-- Pregunta 6 -->
+            <div class="form-group">
+                <label for="gatosPerros" style="color: #58315A;">¿Te gusta ver gatos y perros juntos?</label>
+                <select class="form-control" id="gatosPerros" name="gatosPerros">
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <!-- Pregunta 7 -->
+            <div class="form-group">
+                <label for="tipoPelo" style="color: #58315A;">¿Gatos con pelo o sin pelo?</label>
+                <select class="form-control" id="tipoPelo" name="tipoPelo">
+                    <option value="con_pelo">Con pelo</option>
+                    <option value="sin_pelo">Sin pelo</option>
+                </select>
+            </div>
+
+            <!-- Pregunta 8 -->
+            <div class="form-group">
+                <label for="contenido" style="color: #58315A;">¿Qué te gustaría ver en nuestra plataforma?</label>
+                <textarea class="form-control" id="contenido" name="contenido" rows="3" placeholder="Escribe tus sugerencias"></textarea>
+            </div>
+
+            <!-- Botón de enviar -->
+            <button type="submit" class="btn btn-primary btn-block" style="background-color: #58315A; border-color: #58315A;"><a href="../index.html">Enviar</a></button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

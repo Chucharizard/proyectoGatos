@@ -1,0 +1,35 @@
+/* Paleta de colores */
+body {
+    background-color: #EFEFF4; /* Color de fondo claro */
+}
+
+/* Estilos de los campos y etiquetas */
+.form-control {
+    border-color: #3A2B4E; /* Borde color oscuro */
+    color: #3A2B4E; /* Texto color oscuro */
+}
+
+.form-control::placeholder {
+    color: #C8C2D2; /* Placeholder en tono claro */
+}
+
+label {
+    font-weight: bold;
+    color: #58315A; /* Color de las etiquetas */
+}
+
+/* Botón */
+.btn-primary {
+    background-color: #58315A;
+    border-color: #58315A;
+}
+
+.btn-primary:hover {
+    background-color: #3A2B4E; /* Tono más oscuro al pasar el cursor */
+    border-color: #3A2B4E;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}

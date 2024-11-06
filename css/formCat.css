@@ -1,0 +1,98 @@
+:root {
+    --violeta-principal: #6B4E71;
+    --violeta-claro: #9B8E9D;
+    --violeta-oscuro: #4A3251;
+    --texto-beige: #F5E6E8;
+    --beige-claro: #EDE7E3;
+}
+
+body {
+    background: linear-gradient(135deg, var(--beige-claro), #f8f4f9);
+    min-height: 100vh;
+}
+
+
+.formulario-container {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.titulo-seccion {
+    color: var(--violeta-oscuro);
+    border-bottom: 3px solid var(--violeta-claro);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.preview-imagen {
+    max-width: 300px;
+    max-height: 300px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    display: none;
+}
+
+.btn-violeta {
+    background: linear-gradient(45deg, var(--violeta-principal), var(--violeta-oscuro));
+    color: var(--texto-beige);
+    border: none;
+    padding: 10px 25px;
+    transition: all 0.3s ease;
+}
+
+.btn-violeta:hover {
+    transform: translateY(-2px);
+    color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.personalidad-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.tag {
+    padding: 5px 15px;
+    border-radius: 20px;
+    background: var(--beige-claro);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tag.seleccionado {
+    background: var(--violeta-principal);
+    color: white;
+}
+
+.emoji-rating {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.emoji-option {
+    font-size: 2em;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    opacity: 0.5;
+}
+
+.emoji-option:hover {
+    transform: scale(1.2);
+}
+
+.emoji-option.seleccionado {
+    opacity: 1;
+}
+
+.form-label {
+    color: var(--violeta-oscuro);
+    font-weight: 500;
+}

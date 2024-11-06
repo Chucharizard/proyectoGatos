@@ -1,0 +1,38 @@
+.footer-global {
+    background: linear-gradient(
+        to right,
+        var(--violeta-oscuro),
+        var(--violeta-principal)
+    );
+    color: var(--texto-beige);
+}
+
+.footer-global a:hover {
+    opacity: 0.8;
+}
+
+.social-links .btn {
+    transition: transform 0.3s ease;
+}
+
+.social-links .btn:hover {
+    transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+    -moz-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    -o-transform: translateY(-3px);
+}
+
+.cat-animation {
+    display: inline-block;
+    animation: catWalk 0.5s ease infinite alternate;
+}
+
+@keyframes catWalk {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-3px);
+    }
+}

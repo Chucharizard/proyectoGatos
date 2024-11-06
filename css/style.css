@@ -1,0 +1,34 @@
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-custom {
+    background: linear-gradient(to right, var(--violeta-oscuro), #563960, #624270);
+}
+
+.navbar-custom .breadcrumb {
+    margin-left: 20px;
+}
+
+.navbar-custom .breadcrumb-item + .breadcrumb-item::before {
+    color: var(--texto-beige);
+}
+
+.navbar-custom .breadcrumb-item.active {
+    color: var(--beige-claro);
+}
+
+.navbar-custom .breadcrumb a {
+    text-decoration: none;
+}
+
+.navbar-custom .breadcrumb a:hover {
+    color: var(--beige-claro) !important;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-custom .breadcrumb {
+        display: none;
+    }
+}

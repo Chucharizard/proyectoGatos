@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Gatitos</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/galeriaCat.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="fas fa-cat"></i> GatitosFelices</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../vistas/formCat.html">Compartir Gatito</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../vistas/galeriaCat.html">Ver Galería</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <div class="container py-5">
+        <!-- Título -->
+        <h2 class="titulo-seccion">
+            <i class="fas fa-paw"></i> Galería de Gatitos Felices 😺
+        </h2>
+
+        <!-- Filtros -->
+        <div class="filtros">
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="fas fa-search"></i>
+                        </span>
+                        <input type="text" class="form-control" id="buscarGato" placeholder="Buscar por nombre del gatito...">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <select class="form-select" id="filtroPersonalidad">
+                        <option value="">Todos los gatitos</option>
+                        <option value="😴">Dormilones 😴</option>
+                        <option value="🎮">Juguetones 🎮</option>
+                        <option value="🍖">Tragones 🍖</option>
+                        <option value="🤗">Mimosos 🤗</option>
+                        <option value="😠">Gruñones 😠</option>
+                        <option value="🌎">Aventureros 🌎</option>
+                        <option value="😈">Traviesos 😈</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Galería de Gatos -->
+        <div class="row g-4" id="galeriaGatos">
+            <!-- Gato 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="tarjeta-gato">
+                    <img src="../img/img-tuCat/Talia.jpg" class="imagen-gato" alt="Talia">
+                    <div class="p-3">
+                        <h4>Talia 🐱</h4>
+                        <div class="tags-gato">
+                            <span class="tag">Dormilón 😴</span>
+                            <span class="tag">Tragón 🍖</span>
+                        </div>
+                        <p>Le encanta dormir en su cuna (antes era mio).</p>
+                        <div class="rating-ternura">
+                            Nivel de ternura: 😍😍😍
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gato 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="tarjeta-gato">
+                    <img src="../img/img-tuCat/Copernico.jpg" class="imagen-gato" alt="Copernico">
+                    <div class="p-3">
+                        <h4>Copernico 🐱</h4>
+                        <div class="tags-gato">
+                            <span class="tag">Callejero 😈</span>
+                            <span class="tag">Lloron 😿</span>
+                        </div>
+                        <p>Le gusta ver la television.</p>
+                        <div class="rating-ternura">
+                            Nivel de ternura: 🥰🥰🥰🥰
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gato 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="tarjeta-gato">
+                    <img src="../img/img-tuCat/Waton.jpg" class="imagen-gato" alt="Waton">
+                    <div class="p-3">
+                        <h4>Waton 🐱</h4>
+                        <div class="tags-gato">
+                            <span class="tag">Muerto de hambre 🍖</span>
+                            <span class="tag">El terror de los techos 🛋️</span>
+                        </div>
+                        <p>Su hobby es pedirme comida cada 5 minutos.</p>
+                        <div class="rating-ternura">
+                            Nivel de ternura: 🥺🥺🥺🥺🥺
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gato 4 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="tarjeta-gato">
+                    <img src="../img/img-tuCat/Mamerto.jpg" class="imagen-gato" alt="Mamerto">
+                    <div class="p-3">
+                        <h4>Mamerto 🐱</h4>
+                        <div class="tags-gato">
+                            <span class="tag">Aventurero 🌎</span>
+                            <span class="tag">Juguetón 🎮</span>
+                        </div>
+                        <p>Le encanta explorar todos los rincones de la casa.</p>
+                        <div class="rating-ternura">
+                            Nivel de ternura: 😍😍😍😍
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gato 5 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="tarjeta-gato">
+                    <img src="../img/img-tuCat/Peluzin.jpg" class="imagen-gato" alt="Peluzin">
+                    <div class="p-3">
+                        <h4>Peluzin 🐱</h4>
+                        <div class="tags-gato">
+                            <span class="tag">Jugueton 🎮</span>
+                            <span class="tag">Mimoso 🤗</span>
+                        </div>
+                        <p>No hay siesta que no quiera compartir conmigo.</p>
+                        <div class="rating-ternura">
+                            Nivel de ternura: 🥰🥰🥰🥰🥰
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gato 6 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="tarjeta-gato">
+                    <img src="../img/img-tuCat/Trapito.jpg" class="imagen-gato" alt="Trapito">
+                    <div class="p-3">
+                        <h4>Trapito 🐱</h4>
+                        <div class="tags-gato">
+                            <span class="tag">Aventurero 🌎</span>
+                            <span class="tag">Travieso 😈</span>
+                        </div>
+                        <p>El rey de la casa, todo es su territorio.</p>
+                        <div class="rating-ternura">
+                            Nivel de ternura: 😍😍😍
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+          <!-- 17. Pagination -->
+        <nav class="mt-5">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">Anterior</a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Siguiente</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Botón para compartir -->
+        <div class="text-center mt-4">
+            <a href="formCat.html" class="btn btn-violeta">
+                <i class="fas fa-plus-circle"></i> ¡Comparte a tu Gatito!
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="footer-global mt-5">
+        <div class="container py-4">
+            <div class="row g-4">
+                <!-- Columna 1: Sobre Nosotros -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="mb-4">
+                        <h5 class="mb-3 d-flex align-items-center">
+                            <i class="fas fa-cat me-2"></i> GatitosFelices
+                        </h5>
+                        <p class="text-light-emphasis mb-3">
+                            Compartiendo la alegría y el amor por nuestros amigos felinos. Un espacio para celebrar a nuestros compañeros peludos.
+                        </p>
+                        <div class="social-links">
+                            <button class="btn btn-outline-light btn-sm me-2">
+                                <i class="fab fa-facebook"></i>
+                            </button>
+                            <button class="btn btn-outline-light btn-sm me-2">
+                                <i class="fab fa-instagram"></i>
+                            </button>
+                            <button class="btn btn-outline-light btn-sm me-2">
+                                <i class="fab fa-twitter"></i>
+                            </button>
+                            <button class="btn btn-outline-light btn-sm">
+                                <i class="fab fa-tiktok"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Columna 2: Enlaces Rápidos -->
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="mb-3">Enlaces Rápidos</h5>
+                    <div class="d-flex flex-column gap-2">
+                        <a href="formCat.html" class="text-decoration-none text-light">
+                            <i class="fas fa-paw me-2"></i>Compartir Gatito
+                        </a>
+                        <a href="galeriaCat.html" class="text-decoration-none text-light">
+                            <i class="fas fa-images me-2"></i>Galería de Gatitos
+                        </a>
+                        <a href="#" class="text-decoration-none text-light">
+                            <i class="fas fa-book me-2"></i>Consejos Felinos
+                        </a>
+                        <a href="#" class="text-decoration-none text-light">
+                            <i class="fas fa-home me-2"></i>Página de Inicio
+                        </a>
+                    </div>
+                </div>
+    
+                <!-- Columna 3: Contacto -->
+                <div class="col-lg-4 col-md-12">
+                    <h5 class="mb-3">Contacto</h5>
+                    <div class="d-flex flex-column gap-2">
+                        <p class="mb-2">
+                            <i class="fas fa-envelope me-2"></i>
+                            gatitosFelices@gmail.com.com
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-phone me-2"></i>
+                            110
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-map-marker-alt me-2"></i>
+                            Yotala, Sucre, Bolivia
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Separador -->
+            <hr class="my-4 border-light opacity-25">
+    
+            <!-- Footer Bottom -->
+            <div class="text-center">
+                <p class="mb-0 d-flex align-items-center justify-content-center">
+                    © 2024 GatitosFelices - Todos los derechos reservados
+                    <span class="ms-2 cat-animation">🐱</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Scripts -->
+    <script>
+        // Búsqueda por nombre
+        document.getElementById('buscarGato').addEventListener('input', function(e) {
+            const busqueda = e.target.value.toLowerCase();
+            const tarjetas = document.querySelectorAll('.tarjeta-gato');
+
+            tarjetas.forEach(tarjeta => {
+                const nombre = tarjeta.querySelector('h4').textContent.toLowerCase();
+                if (nombre.includes(busqueda)) {
+                    tarjeta.closest('.col-md-6').style.display = '';
+                } else {
+                    tarjeta.closest('.col-md-6').style.display = 'none';
+                }
+            });
+        });
+
+        // Filtro por personalidad usando emojis
+document.getElementById('filtroPersonalidad').addEventListener('change', function(e) {
+    const emojiSeleccionado = e.target.value;
+    const tarjetas = document.querySelectorAll('.tarjeta-gato');
+
+    tarjetas.forEach(tarjeta => {
+        const tags = tarjeta.querySelectorAll('.tag');
+        let coincide = emojiSeleccionado === ''; // Si no hay selección, muestra todos
+        
+        tags.forEach(tag => {
+            if (tag.textContent.includes(emojiSeleccionado)) {
+                coincide = true;
+            }
+        });
+
+        tarjeta.closest('.col-md-6').style.display = coincide ? '' : 'none';
+    });
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatTok</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --altura-video: calc(100vh - 56px);
+        }
+
+        body {
+            background-color: #000;
+            color: white;
+            overflow: hidden;
+        }
+
+        .contenedor-video {
+            height: var(--altura-video);
+            position: relative;
+            overflow: hidden;
+            background-color: #111;
+        }
+
+        .video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .acciones-laterales {
+            position: absolute;
+            right: 20px;
+            bottom: 100px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            z-index: 100;
+        }
+
+        .accion-boton {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+        }
+
+        .accion-boton i {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .accion-boton span {
+            font-size: 12px;
+        }
+
+        .info-video {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 80px;
+            z-index: 100;
+        }
+
+        .usuario-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+            border: 2px solid white;
+        }
+
+        .descripcion {
+            margin-bottom: 10px;
+        }
+
+        .etiquetas {
+            font-size: 14px;
+            color: #fff;
+        }
+
+        .barra-navegacion {
+            background-color: #000;
+            border-top: 1px solid #333;
+        }
+
+        .nav-link {
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .nav-link i {
+            font-size: 20px;
+        }
+
+        .nav-link.activo {
+            color: #ff0050;
+        }
+
+        .control-deslizar {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .overlay-gradiente {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 200px;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            z-index: 2;
+        }
+        
+        .boton-seguir {
+            background-color: #ff0050;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 3px 15px;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+
+        .contador {
+            background-color: rgba(255,255,255,0.2);
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+
+        @media (min-width: 768px) {
+            .contenedor-principal {
+                max-width: 414px;
+                margin: 0 auto;
+                background-color: #000;
+                height: 100vh;
+                position: relative;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor-principal">
+        <!-- Contenedor del Video -->
+        <div class="contenedor-video">
+            <div class="control-deslizar"></div>
+            <img src="/api/placeholder/400/800" alt="Video de gato" class="video">
+            <div class="overlay-gradiente"></div>
+
+            <!-- Acciones Laterales -->
+            <div class="acciones-laterales">
+                <a href="#" class="accion-boton">
+                    <i class="fas fa-heart"></i>
+                    <span class="contador">150.4K</span>
+                </a>
+                <a href="#" class="accion-boton">
+                    <i class="fas fa-comment-dots"></i>
+                    <span class="contador">2242</span>
+                </a>
+                <a href="#" class="accion-boton">
+                    <i class="fas fa-bookmark"></i>
+                    <span class="contador">54.2K</span>
+                </a>
+                <a href="#" class="accion-boton">
+                    <i class="fas fa-share"></i>
+                    <span class="contador">12.8K</span>
+                </a>
+            </div>
+
+            <!-- Información del Video -->
+            <div class="info-video">
+                <div class="usuario-info">
+                    <img src="/api/placeholder/40/40" alt="Avatar" class="avatar">
+                    <span class="usuario">@gatitos_divertidos</span>
+                    <button class="boton-seguir">Seguir</button>
+                </div>
+                <div class="descripcion">
+                    Mi gato intentando atrapar el puntero del mouse 😂🐱💻
+                </div>
+                <div class="etiquetas">
+                    #gatos #catvideos #viral #programming #developers
+                </div>
+            </div>
+        </div>
+
+        <!-- Barra de Navegación -->
+        <nav class="barra-navegacion fixed-bottom">
+            <div class="row g-0">
+                <div class="col">
+                    <a href="#" class="nav-link activo">
+                        <i class="fas fa-home"></i>
+                        <div>Inicio</div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-compass"></i>
+                        <div>Descubrir</div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-plus-square"></i>
+                        <div>Crear</div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-inbox"></i>
+                        <div>Buzón</div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-user"></i>
+                        <div>Perfil</div>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Adopta tu Gatito</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/adoptaGatos.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4" style="color: #58315A;">Formulario de Adopción - Adopta tu Gatito</h2>
+        
+        <!-- Apartado Información Personal Adoptante -->
+        <h4 class="mt-4" style="color: #58315A;">Información Personal del Adoptante</h4>
+        <form>
+            <div class="form-group">
+                <label for="nombres" style="color: #58315A;">Nombres</label>
+                <input type="text" class="form-control" id="nombres" name="nombres" placeholder="Escribe tus nombres">
+            </div>
+            <div class="form-group">
+                <label for="apellidos" style="color: #58315A;">Apellidos</label>
+                <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Escribe tus apellidos">
+            </div>
+            <div class="form-group">
+                <label for="celular" style="color: #58315A;">Número de Celular</label>
+                <input type="tel" class="form-control" id="celular" name="celular" placeholder="Escribe tu número de celular">
+            </div>
+            <div class="form-group">
+                <label for="carnet" style="color: #58315A;">Carnet de Identidad</label>
+                <input type="text" class="form-control" id="carnet" name="carnet" placeholder="Escribe tu carnet de identidad">
+            </div>
+
+            <!-- Apartado de Calidad de Vida -->
+            <h4 class="mt-4" style="color: #58315A;">Calidad de Vida</h4>
+            <div class="form-group">
+                <label for="tipoDomicilio" style="color: #58315A;">¿Cuál es su tipo de domicilio?</label>
+                <select class="form-control" id="tipoDomicilio" name="tipoDomicilio">
+                    <option value="casa">Casa</option>
+                    <option value="departamento">Departamento</option>
+                    <option value="otros">Otros</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="serviciosBasicos" style="color: #58315A;">¿Tiene acceso a los servicios básicos?</label>
+                <select class="form-control" id="serviciosBasicos" name="serviciosBasicos">
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="inversion" style="color: #58315A;">¿Cuánto está dispuesto a invertir en su gato al mes?</label>
+                <input type="text" class="form-control" id="inversion" name="inversion" placeholder="Escribe una cantidad aproximada">
+            </div>
+            <div class="form-group">
+                <label for="otrasMascotas" style="color: #58315A;">¿Cuántas mascotas más tiene?</label>
+                <input type="number" class="form-control" id="otrasMascotas" name="otrasMascotas" placeholder="Número de mascotas">
+            </div>
+
+            <!-- Tipo de gato ideal -->
+            <h4 class="mt-4" style="color: #58315A;">Tipo de Gato Ideal</h4>
+            <div class="form-group">
+                <label for="rangoEdad" style="color: #58315A;">¿Entre qué rangos de edad le gustaría que tenga su gatito?</label>
+                <input type="text" class="form-control" id="rangoEdad" name="rangoEdad" placeholder="Ej: 1-3 años">
+            </div>
+            <div class="form-group">
+                <label for="tipoPelaje" style="color: #58315A;">¿Qué tipo de pelaje y color desea que tenga su gato?</label>
+                <input type="text" class="form-control" id="tipoPelaje" name="tipoPelaje" placeholder="Especifica pelaje y color">
+            </div>
+            <div class="form-group">
+                <label for="personalidad" style="color: #58315A;">¿Le gustaría un gato tranquilo o juguetón?</label>
+                <select class="form-control" id="personalidad" name="personalidad">
+                    <option value="tranquilo">Tranquilo</option>
+                    <option value="jugueton">Juguetón</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="nombreGatito" style="color: #58315A;">¿Qué nombre le pondría a su gatito?</label>
+                <input type="text" class="form-control" id="nombreGatito" name="nombreGatito" placeholder="Escribe un nombre">
+            </div>
+
+            <!-- Botón de enviar -->
+            <button type="submit" class="btn btn-primary btn-block" style="background-color: #58315A; border-color: #58315A;"><a href="../index.html">¡Adóptalo yaaa!</a> </button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

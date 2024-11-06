@@ -1,0 +1,13 @@
+.navbar-custom {
+    background: linear-gradient(
+        to right,
+        var(--violeta-oscuro),
+        #563960,
+        #624270
+    );
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: var(--texto-beige) !important;
+}
